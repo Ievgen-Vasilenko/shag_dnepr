@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+
+        body {
+            margin: 0;
+            height: 100%;
+            background-image: url("resources/images/background1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            text-align: center
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin-bottom: -10px
+        }
+
+        div#main {
+            background: rgba(000, 000, 000, 0.2);
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Tahoma', serif
+        }
+
+        div#first {
+            background: rgba(255, 255, 255, 0.4);
+            width: 350px;
+            /*height: 615px;*/
+            padding: 0 45px 20px;
+            float: none
+        }
+
+        input {
+            width: 340px;
+            height: 35px;
+            border: 1px solid gray;
+            padding-left: 10px;
+            margin-top: 8px;
+            border-radius: 5px
+        }
+
+        textarea {
+            width: 340px;
+            height: 250px;
+            border: 1px solid gray;
+            padding-left: 10px;
+            margin-top: 8px;
+            border-radius: 5px
+        }
+
+        select {
+            width: 340px;
+            height: 35px;
+            margin-top: 8px;
+            line-height: 1;
+            border-radius: 5px;
+        }
+
+        .submit {
+            width: 353px;
+            height: 45px;
+            color: #fff;
+            margin-top: 8px;
+            background-color: #1067a2;
+            font-size: 20px;
+            font-weight: 700
+        }
+    </style>
+</head>
+<body>
+
+<div id="main">
+    <div id="first">
+        <h1>Регистрация</h1>
+        <form id="myform" name="myform" action="add" method="post">
+            <label>Имя:</label>
+            <input type="text" name="name" required/>
+            <label>Логин:</label>
+            <input type="text" name="login" required/>
+            <label>Пароль:</label>
+            <input type="password" name="password" required/>
+            <input class="submit" type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
